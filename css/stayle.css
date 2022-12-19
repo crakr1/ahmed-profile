@@ -300,7 +300,7 @@ section.gallery .gallery-img .items .itme {
     transition: all 0.5s ease;
 }
 section.gallery .gallery-img .items img {
-    width: 300px;
+    width: 100%;
     border-radius: 7px;
 }
 
