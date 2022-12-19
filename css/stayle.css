@@ -1,0 +1,439 @@
+*{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: cairo;
+    src: url(../font/Cairo-Bold.ttf);
+
+}
+
+body {
+    font-family: cairo;
+}
+
+nav.navbar {
+    background-color: #fff;
+    border-bottom: 2px solid gray;
+}
+nav.navbar .nav-item .nav-link {
+    color: rgb(113, 113, 255);
+    line-height: 60px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+nav.navbar .nav-item .nav-link:hover ,
+nav.navbar .nav-item .nav-link.active {
+    background-color: rgb(113, 113, 255);
+    color: #fff;
+}
+nav.navbar .scrolled .nav-item .nav-link:hover ,
+nav.navbar .scrolled .nav-item .nav-link.active {
+    background-color: rgb(113, 113, 255);
+    color: #fff;
+} 
+
+
+header {
+    min-height: 500px;
+    background: linear-gradient(to right, rgb(128, 6, 241) ,rgb(51, 21, 78));
+    color: blueviolet;
+}
+
+header.header .overlay {
+    background-color: rgb(113, 113, 255 , 0.9);
+    color: #fff;
+    padding: 40px 60px;
+    transform: translateY(20%);
+}
+
+header.header .overlay .img-of-header img{
+    width: 200px;
+    border: 4px solid rgb(83, 83, 255);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+header.header .overlay h1 {
+    padding-bottom: 20px;
+}
+
+header.header .overlay h1 span {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+header.header .overlay ul  i {
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+header.header .overlay ul  i:hover {
+    color: rgb(113, 113, 255);
+    background-color: #fff;
+}
+
+header.header .overlay h3 {
+    font-size: 20px;
+}
+
+header.header .overlay p {
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 15px;
+    color: rgb(210, 210, 210);
+}
+
+header.header .overlay a.down {
+    color: rgb(113, 113, 255);
+    background-color: #fff;
+    line-height: 25px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+header.header .overlay a.down:hover {
+    color: #fff;
+    background-color: rgb(79, 79, 251);
+}
+
+section.shhadh {
+    background-color: rgb(241, 235, 235);
+    padding: 180px 0 60px;
+}
+
+section.shhadh .shhadh-title {
+    padding-bottom: 30px;
+    position: relative;
+}
+
+section.shhadh .shhadh-title h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color:rgb(39, 39, 254) ;
+}
+
+
+
+section.shhadh .shhadh-title h2 ::after {
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background-color:rgb(39, 39, 254) ;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+section.shhadh .shhadh-title i {
+    display: block;
+}
+
+section.shhadh ul.timeline {
+    padding-right: 0;
+    padding-top: 45px;
+    list-style: none;
+    position: relative;
+}
+
+section.shhadh ul.timeline::before {
+    content: "";
+    width: 2px;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    background-color: rgb(39, 39, 254);
+    transform: translateX(50%);
+
+}
+
+
+section.shhadh ul.timeline  .timebox {
+    border: 1px solid rgb(199, 198, 198);
+    background-color: #fff;
+    padding: 20px 25px ;
+    width: 47%;
+    position: relative;
+}
+
+section.shhadh ul.timeline  .timebox h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+section.shhadh ul.timeline  .timebox h4 span {
+    background-color: rgb(39, 39, 254);
+    padding: 0 5px;
+    margin-left: 20px;
+}
+
+section.shhadh ul.timeline .timebox p {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(152, 152, 152);
+}
+
+section.shhadh ul.timeline li .timebox::after {
+    content: "";
+    top: 10%;
+    left: -10px;
+    width:20px ;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    border-bottom:2px solid rgb(199, 198, 198) ;
+    border-left:2px solid rgb(199, 198, 198) ;
+    transform: rotate(45deg);
+}
+
+section.shhadh ul.timeline li {
+    position: relative;
+    margin-bottom: -50px;
+}
+
+section.shhadh ul.timeline li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    right: 50%;
+    top:10%;
+    border-radius: 50%;
+    background-color: rgb(39, 39, 254);
+    position: absolute;
+    transform: translateX(50%);
+}
+
+section.shhadh ul.timeline li:nth-child(even) {
+    direction: ltr;
+    text-align: left;
+}
+
+section.shhadh ul.timeline li:nth-child(even) .timebox h4 span{
+    float: left;
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+section.shhadh ul.timeline li:nth-child(even) .timebox::after {
+    border: 0;
+    left: auto;
+    right: -10px;
+    border-right: 2px solid rgb(199, 198, 198) ;
+    border-top: 2px solid rgb(199, 198, 198) ;
+}
+
+section.skils  {
+    background: linear-gradient(to right, rgb(128, 6, 241) ,rgb(51, 21, 78));
+}
+
+section.skils .overlay  {
+    padding: 100px 0;
+}
+
+section.skils .overlay .stat p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+
+section.skils .overlay .stat .circle canvas {
+    background-color: rgb(130, 130, 130);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+section.skils .overlay .stat .circle{
+    position: relative;
+}
+
+section.skils .overlay .stat .circle span {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    right: 50%;
+    top: 50%;
+    transform: translate(50% ,-50%);
+}
+
+section.gallery {
+    padding: 70px 0 60px;
+}
+
+section.gallery .gallery-title h2 {
+    color: rgb(39, 39, 254);
+    padding-bottom: 50px;
+}
+
+
+
+section.gallery .gallery-img label {
+    font-size: 18px;
+    margin: 0 5px 50px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border:  1px  solid rgb(199, 199, 199);
+    transition: all 0.5s ease;
+}
+
+section.gallery .gallery-img label:hover {
+    color: #fff;
+    background-color: rgb(39, 39, 254);
+}
+
+
+section.gallery .gallery-img .items .itme {
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+}
+section.gallery .gallery-img .items img {
+    width: 300px;
+    border-radius: 7px;
+}
+
+section.gallery .gallery-img input.item-1:checked~label.lipel-1,
+section.gallery .gallery-img input.item-2:checked~label.lipel-2,
+section.gallery .gallery-img input.item-3:checked~label.lipel-3,
+section.gallery .gallery-img input.item-all:checked~label.lipel-all {
+    color: #fff;
+    background-color: rgb(39, 39, 254);
+}
+
+section.gallery .gallery-img input.item-1:checked~.items .item-1,
+section.gallery .gallery-img input.item-2:checked~.items .item-2,
+section.gallery .gallery-img input.item-3:checked~.items .item-3 {
+    transform: scale(1.08);
+}
+
+section.gallery .gallery-img input.item-1:checked~.items .itme:not(.item-1), 
+section.gallery .gallery-img input.item-2:checked~.items .itme:not(.item-2),
+section.gallery .gallery-img input.item-3:checked~.items .itme:not(.item-3)  {
+    
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+section.contact .overlay  {
+    background: linear-gradient(to right, rgb(128, 6, 241) ,rgb(51, 21, 78));
+}
+
+section.contact .costmar  {
+    margin-bottom: 50px;
+}
+
+section.contact .costmar .title-of-costmar h3 {
+    color: #fff;
+    padding: 30px;
+}
+
+section.contact .costmar .slider {
+    width: 65%;
+    margin: 0 auto ;
+}
+
+section.contact .costmar .slider .carousel-item {
+    min-height: 200px;
+
+}
+
+section.contact .costmar .slider .carousel-item .carousel-content {
+    width: 100%;
+    padding: 40px 70px 30px;
+    background-color: rgb(171, 171, 243);
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+section.contact .costmar .slider .carousel-item i {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+section.contact .costmar .slider .carousel-item h4 {
+    color: #fff;
+}
+
+section.contact .costmar .slider .carousel-item h4 span {
+    font-size: 16px;
+    color: rgb(231, 229, 229);
+}
+
+section.contact .costmar .slider .carousel-item p {
+    font-size: 16px;
+    color: rgb(199, 199, 199); 
+}
+
+section.contact .costmar .slider .carousel-item ul a i {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(113, 113, 255);
+    transition: all 0.5s ease;
+}
+
+section.contact .costmar .slider .carousel-item ul a i:hover {
+    color: rgb(171, 171, 243);
+}
+
+section.contact .contact-info {
+    padding: 40px;
+    background-color: rgb(171, 171, 243);
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+section.contact .contact-info .info-title {
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+section.contact .contact-info .cont-form input ,
+section.contact .contact-info .cont-form textarea {
+    border: 2px solid rgb(241, 235, 235);
+    line-height: 35px;
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+section.contact .contact-info .cont-form button {
+    font-size: 18px;
+    line-height: 20px;
+    border: 2px solid rgb(171, 171, 243);
+    background-color: rgb(113, 113, 255);
+    padding: 15px 40px;
+    max-width: 150px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+section.contact .contact-info .cont-form button:hover {
+    color: rgb(113, 113, 255);
+    background-color: #fff;
+}
+
+section.contact .contact-info .cont ul{
+    margin-bottom: 10px;
+}
+
+section.contact .contact-info .socil li a i{
+    font-size: 25px;
+    color: rgb(113, 113, 255);
+}
+
+section.contact p {
+    padding: 15px;
+    color: rgb(130, 130, 130);
+}
