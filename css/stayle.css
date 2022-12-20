@@ -46,7 +46,7 @@ header {
 header.header .overlay {
     background-color: rgb(113, 113, 255 , 0.9);
     color: #fff;
-    padding: 40px 60px;
+    padding: 20px 30px;
     transform: translateY(20%);
 }
 
@@ -163,7 +163,7 @@ section.shhadh ul.timeline::before {
 section.shhadh ul.timeline  .timebox {
     border: 1px solid rgb(199, 198, 198);
     background-color: #fff;
-    padding: 20px 25px ;
+    padding: 10px 10px ;
     width: 47%;
     position: relative;
 }
@@ -351,7 +351,7 @@ section.contact .costmar .slider .carousel-item {
 
 section.contact .costmar .slider .carousel-item .carousel-content {
     width: 100%;
-    padding: 40px 70px 30px;
+    padding: 20px 10px 30px;
     background-color: rgb(171, 171, 243);
     opacity: 0.8;
     border-radius: 10px;
